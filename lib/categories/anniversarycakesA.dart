@@ -5,50 +5,42 @@ import 'package:draft_ap/profiles/ProfileS.dart';
 //ربرای استفاده ازویجت‌های Material Design
 void main() {
   //ویجت پروداکت لیست اپ رو ران میکنه
-  runApp(ProductListApp());
+  runApp(ProductListanApp());
 }
 
-class ProductListApp extends StatelessWidget {
+class ProductListanApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //ویجت ریشه
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       //صفحه اصلی برنامه
-      home: ProductListScreen(),
+      home: ProductListanScreen(),
     );
   }
 }
 //از ویجت استست فول استفتده کردم تا پویا باشه و بتونه تغییر کنه
-class ProductListScreen extends StatefulWidget {
+class ProductListanScreen extends StatefulWidget {
   @override
   //متد کرییت استیت وضعیت صفحه لیست محصولات رو میسازه
-  _ProductListScreenState createState() => _ProductListScreenState();
+  _ProductListanScreenState createState() => _ProductListanScreenState();
 }
 
-class _ProductListScreenState extends State<ProductListScreen> {
+class _ProductListanScreenState extends State<ProductListanScreen> {
   //لیستی از محصولات که در ان هر محصول به صورت یک مپ تعریف شده
   // هر مپ شامل ویژگی‌های مختلف یک محصوله مثل نام، قیمت، امتیاز، تصویر، توضیحات، موجودی، و وضعیت علاقه‌مندی.
   List<Map<String, dynamic>> products = [
     //داینامیک میگه داده ها از هر نوعی میتونن باشن واسه ولیو های ویژگی های تو مپ
-    {'name': '  emerald mini cake', 'price': 800000, 'rating': 0, 'image': 'assets/zomorod.png', 'description': 'کیک نیم کیلویی خامه ای با رنگ سبز زمردی و دیزاین ورق طلا ', 'stock': 10, 'isFavorite': false,'isincart':false},
-    {'name': ' tiffany cake', 'price': 900000, 'rating': 0, 'image': 'assets/tiffany2.png', 'description': 'کیک ۱.۵ کیلویی با رنگ تیفانی و بنفش و دیزاین گل ارکیده طبیعی.', 'stock': 5, 'isFavorite': false,'isincart':false},
-    {'name': 'sun flower cake  ', 'price': 750000, 'rating': 0, 'image': 'assets/sunflower.png', 'description': 'کیک یک کیلویی با دیزاین گل های افتاب گردان فوندانتی ', 'stock': 8, 'isFavorite': false,'isincart':false},
-    {'name': 'ocean ruffel cake  ', 'price': 750000, 'rating': 0, 'image': 'assets/raffel.png', 'description': 'کیک نیم کیلویی با دیزاین  رافل اقیانوسی فوندانتی  .', 'stock': 12, 'isFavorite': false,'isincart':false},
-    {'name': ' rose cake ', 'price': 1400000, 'rating': 0, 'image': 'assets/rose.png', 'description': 'کیک ۲ کیلویی خامه ای با دیزاین کلاسیک طلایی و گل رز طبیعی .', 'stock': 7, 'isFavorite': false,'isincart':false},
-    {'name': 'violet cake ', 'price': 800000, 'rating': 0, 'image': 'assets/purple2.png', 'description': 'کیک ۲ کیلویی خامه ای با دیزاین بنفش و گل های طبیعی.', 'stock': 6, 'isFavorite': false,'isincart':false},
-    {'name': 'strawberry naked cake    ', 'price': 450000, 'rating': 0, 'image': 'assets/plain.png', 'description': 'کیک ساده وانیلی ۱ کیلویی با فیلینگ و دیزاین  مارمالاد توت فرنگی تازه.', 'stock': 15, 'isFavorite': false,'isincart':false},
-    {'name': ' ocean cake', 'price': 750000, 'rating': 0, 'image': 'assets/ocean.png', 'description': 'کیک جذاب ۱.۵ کیلویی  با طرح اقیانوس آبی.', 'stock': 9, 'isFavorite': false,'isincart':false},
-    {'name': 'gray marble cake   ', 'price': 850000, 'rating': 0, 'image': 'assets/marble2.png', 'description': 'کیک ۱ کیلویی فوندانتی  با طرح مرمر طوسی و رگه های طلایی.', 'stock': 11, 'isFavorite': false,'isincart':false},
-    {'name': 'orchid marble cake  ', 'price': 1200000, 'rating': 0, 'image': 'assets/marble.png', 'description': 'کیک ۱.۵ کیلویی فوندانتی  با طرح مرمر و گل های طبیعی ارکیده.', 'stock': 4, 'isFavorite': false,'isincart':false},
-    {'name': 'gold & gray cake  ', 'price': 950000, 'rating': 0, 'image': 'assets/gray.png', 'description': 'کیکی ۲ کیلویی با طراحی مدرن طوسی و طلایی.', 'stock': 6, 'isFavorite': false,'isincart':false},
-    {'name': 'purple geode cake   ', 'price': 1000000, 'rating': 0, 'image': 'assets/geode.png', 'description': 'کیکی ۱ کیلویی خامه ای با طرح ژئود بنفش.', 'stock': 8, 'isFavorite': false,'isincart':false},
-    {'name': '  flowers cake', 'price': 1200000, 'rating': 0, 'image': 'assets/flowers.png', 'description': 'کیک ۲ کیلویی خامه ای  با گل‌های طبیعی رنگارنگ.', 'stock': 10, 'isFavorite': false,'isincart':false},
-    {'name': '  black marble cake', 'price': 500000, 'rating': 0, 'image': 'assets/black.png', 'description': 'کیک ۳ کیلویی فوندانتی با طرح مرمر سیاه.', 'stock': 5, 'isFavorite': false,'isincart':false},
-    {'name': '  breaking bad cake', 'price': 850000, 'rating': 0, 'image': 'assets/breakingbad.png', 'description': 'کیکی خامه ای ۲ کیلویی با تم سریال بریکینگ بد.', 'stock': 7, 'isFavorite': false,'isincart':false},
-    {'name': ' emerald cake', 'price': 1100000, 'rating': 0, 'image': 'assets/zomorod2.png', 'description': 'کیک ۱.۵ کیلویی خامه ای جذاب با رنگ سبز زمردی و دیزاین ورق طلا', 'stock': 8, 'isFavorite': false,'isincart':false},
-    {'name': 'the frog cake   ', 'price': 1050000, 'rating': 0, 'image': 'assets/thefrog.png', 'description': 'کیک ۲ کیلویی خامه ای  بامزه با غورباقه کوچولو', 'stock': 3, 'isFavorite': false,'isincart':false},
-    {'name': '  updated cake ', 'price': 700000, 'rating': 0, 'image': 'assets/updated.png', 'description': 'کیک نیم کیلویی خامه ای ساده و بامزه  .', 'stock': 3, 'isFavorite': false,'isincart':false},
+    {'name': 'my peace cake  ', 'price': 800000, 'rating': 0, 'image': 'assets/aramejan.png', 'description': ' کیک عاشقانه ۱ کیلویی فوندانتی با استند آرام جان  ', 'stock': 3, 'isFavorite': false,'isincart':false},
+    {'name': 'carrot cake ', 'price': 600000, 'rating': 0, 'image': 'assets/carrot.png', 'description': '.کیک ۱ کیلویی هویج با دیزاین ساده و مینیمال همراه با فشفشه برای سالگرد ازدواج', 'stock': 5, 'isFavorite': false,'isincart':false},
+    {'name': 'sweet 16 cake', 'price': 650000, 'rating': 0, 'image': 'assets/crepe.png', 'description': 'کیک نیم کیلویی با تزیین گل خامه ای برای ۱۶ امین سالگرد ازدواج ', 'stock': 2, 'isFavorite': false,'isincart':false},
+    {'name': '  happy couple cake', 'price': 750000, 'rating': 0, 'image': 'assets/dumb&dumber.png', 'description': 'کیک نیم کیلویی بامزه برای زوج های شوخ .', 'stock': 2, 'isFavorite': false,'isincart':false},
+    {'name': 'rose cake', 'price': 1400000, 'rating': 0, 'image': 'assets/rose.png', 'description': 'کیک ۲ کیلویی خامه ای با دیزاین کلاسیک طلایی و گل رز طبیعی و رمانتیک .', 'stock': 5, 'isFavorite': false,'isincart':false},
+    {'name': 'shiny hearts cake', 'price': 1000000, 'rating': 0, 'image': 'assets/shinyhearts.png', 'description': 'کیک ۲ کیلویی خامه ای براق با دیزاین قلب های رز گلد.', 'stock': 6, 'isFavorite': false,'isincart':false},
+    {'name': 'strawberry naked cake', 'price': 450000, 'rating': 0, 'image': 'assets/plain.png', 'description': 'کیک ساده وانیلی ۱ کیلویی با فیلینگ و دیزاین  مارمالاد توت فرنگی تازه.', 'stock': 3, 'isFavorite': false,'isincart':false},
+    {'name': '  25 hearts cake', 'price': 750000, 'rating': 0, 'image': 'assets/heart.png', 'description': 'کیک جذاب نیم کیلویی با دیزاین قلب های کوچک برای ۲۵ امین سالگرد ازدواج.', 'stock': 1, 'isFavorite': false,'isincart':false},
+    {'name': '  piano love cake ', 'price': 1050000, 'rating': 0, 'image': 'assets/piano.png', 'description': 'کیک ۱ کیلویی فوندانتی  با طرح پیانو برای ۱۸ امین سالگرد ازدواج   .', 'stock': 2, 'isFavorite': false,'isincart':false},
+    {'name': '  sky love cake ', 'price': 950000, 'rating': 0, 'image': 'assets/sky.png', 'description': 'کیک ۱ کیلویی خامه ای   با طرح آسمان برای ۱۶ امین سالگرد ازدواج( ۵۸۴۴ روز )   .', 'stock': 4, 'isFavorite': false,'isincart':false},
 
   ];
 //متغیر سرچ که فعلا یک استرینگ خالی است ینی تا زمانی که کاربر چیزی وارد نکند، تمام محصولات نمایش داده می‌شن
@@ -236,7 +228,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
               // انتقال به صفحه Home
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProductListApp()),
+                MaterialPageRoute(builder: (context) => ProductListanApp()),
               );
             } else if (index == 1) {
               // انتقال به صفحه Categories
@@ -248,7 +240,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
               // انتقال به صفحه Cart
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProductListApp()),
+                MaterialPageRoute(builder: (context) => ProductListanApp()),
               );
             } else if (index == 3) {
               // انتقال به صفحه Profile

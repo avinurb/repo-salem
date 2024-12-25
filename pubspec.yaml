@@ -31,8 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  image_picker: ^0.8.7+3
-  flutter_lints: ^4.0.0
+  image_picker: ^1.1.2
+  flutter_lints: ^5.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -48,7 +48,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -56,6 +56,63 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
+  assets:
+    - assets/background.jpg
+    - assets/download.jpg
+    - assets/anniversary.jpg
+    - assets/baby.jpg
+    - assets/bento.jpg
+    - assets/birthday.jpg
+    - assets/cream.jpg
+    - assets/fondant.jpg
+    - assets/aramejan.png
+    - assets\sefid.png
+    - assets\monster2.png
+    - assets\barbie.png
+    - assets\flamingo.jpg
+    - assets\plain.png
+    - assets\the owl.png
+    - assets\geode2.png
+    - assets\sky.png
+    - assets\marble2.png
+    - assets\crepe.png
+    - assets\sunflower.png
+    - assets\black.png
+    - assets\raffel.png
+    - assets\purple.png
+    - assets\piano.png
+    - assets\purple2.png
+    - assets\gray.png
+    - assets\spongebob.png
+    - assets\pjmasks2.png
+    - assets\pinklemonade.png
+    - assets\geode.png
+    - assets\silver.png
+    - assets\thefrog.png
+    - assets\updated.png
+    - assets\zomorod.png
+    - assets\monster.png
+    - assets\tiffany.png
+    - assets\doughnut.png
+    - assets\rose2.png
+    - assets\breakingbad.png
+    - assets\shinyhearts.png
+    - assets\dumb&dumber.png
+    - assets\carrot.png
+    - assets\avengers.png
+    - assets\teeth.png
+    - assets\sea.png
+    - assets\pjmasks.png
+    - assets\heart.png
+    - assets\flowers.png
+    - assets\aramejan.png
+    - assets\rose.png
+    - assets\photo.png
+    - assets\pawpatrols.png
+    - assets\zomorod2.png
+    - assets\ocean.png
+    - assets\marble.png
+    - assets\tiffany2.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

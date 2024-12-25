@@ -26,7 +26,7 @@ class ProfileS extends StatelessWidget {
           bodyLarge: TextStyle(color: Colors.black87, fontSize: 20), // متن خواناتر
           bodyMedium: TextStyle(color: Colors.black54, fontSize: 18), // متن کمی پررنگ‌تر
         ),
-        iconTheme: IconThemeData(color: Colors.black87), // آیکون پررنگ‌تر
+        iconTheme: IconThemeData(color: Colors.black54), // آیکون پررنگ‌تر
         listTileTheme: ListTileThemeData(
           tileColor: pastelLightCyan,
           textColor: Colors.black87,
