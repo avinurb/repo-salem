@@ -7,7 +7,7 @@ import 'profiles_subDirectories/OnlineSupportS.dart';
 import 'package:draft_ap/Logins/HomeS.dart';
 import 'package:draft_ap/categories/dastebandiA.dart';
 import 'package:draft_ap/ColorPlate.dart';
-
+import 'package:draft_ap/homepage/homeA.dart';
 void main() {
   runApp(MyApp());
 }
@@ -225,7 +225,7 @@ class _UserAccountPageState extends State<UserAccountPage> {
           if (index == 0) {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Home()),
+              MaterialPageRoute(builder: (context) => homepageA()),
             );
           } else if (index == 1) {
             Navigator.push(

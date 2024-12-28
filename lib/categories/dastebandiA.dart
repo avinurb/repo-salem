@@ -7,6 +7,7 @@ import 'fondantcakeslist.dart';
 import 'kidscakeslist.dart';
 import 'bentocakelist.dart';
 import 'package:draft_ap/profiles/ProfileS.dart';
+import 'package:draft_ap/homepage/homeA.dart';
 
 void main() {
   runApp(MyApp());
@@ -104,7 +105,7 @@ class CategoryPage extends StatelessWidget {
             // انتقال به صفحه Home
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ProductListApp()),
+              MaterialPageRoute(builder: (context) => homepageA()),
             );
           } else if (index == 1) {
             // انتقال به صفحه Categories

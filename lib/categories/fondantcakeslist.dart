@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dastebandiA.dart';
 import 'package:draft_ap/profiles/ProfileS.dart';
+import 'package:draft_ap/homepage/homeA.dart';
 
 //ربرای استفاده ازویجت‌های Material Design
 void main() {
@@ -225,7 +226,7 @@ class _ProductListfoScreenState extends State<ProductListfoScreen> {
               // انتقال به صفحه Home
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProductListfoApp()),
+                MaterialPageRoute(builder: (context) => homepageA()),
               );
             } else if (index == 1) {
               // انتقال به صفحه Categories
