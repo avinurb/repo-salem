@@ -241,8 +241,9 @@ class _HomePageState extends State<HomePage> {
             // انتقال به صفحه Categories
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => MyApp()),
-            );
+              MaterialPageRoute(builder: (context) => CategoryPage()),
+
+              );
           } else if (index == 2) {
             // انتقال به صفحه Cart
             Navigator.push(
